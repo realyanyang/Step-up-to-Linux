@@ -81,7 +81,8 @@
     1. 去[cuDNN官网](https://developer.nvidia.com/cudnn)下载相应版本的cuDNN Library for Linux，需要注册一个账号，建议阅读[官方文档](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installlinux-tar)
     2. 根据安装文档说明，解压.tgz并移动到相应的位置即可  
     ![image](https://github.com/YanYangB/Step-up-to-Linux/blob/master/imgs/cudnn.png)
-    
+
+    至此，Deep Learning 的配置完成
 
 
 
