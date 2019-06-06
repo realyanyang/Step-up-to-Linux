@@ -75,7 +75,13 @@
     重启shell
     6. 验证  
     在命令行输入 `nvcc -V`，会输出版本信息  
-    进入家目录下的NVIDIA-SAMPLES，编译运行deviceQuery，输出Result = PASS则证明安装成功
+    进入家目录下的NVIDIA-SAMPLES，编译运行deviceQuery，输出`Result = PASS`则证明安装成功
+
+* 安装cuDNN
+    1. 去[cuDNN官网](https://developer.nvidia.com/cudnn)下载相应版本的cuDNN Library for Linux，需要注册一个账号，建议阅读[官方文档](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installlinux-tar)
+    2. 根据安装文档说明，解压.tgz并移动到相应的位置即可  
+    ![image]()
+
 
 
 
