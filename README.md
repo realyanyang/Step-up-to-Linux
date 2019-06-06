@@ -30,9 +30,20 @@
 1. 美化  
 **一个赏心悦目的界面能给人工作的欲望**  
 此处的美化强烈推荐知乎专栏[世上最良心***](https://zhuanlan.zhihu.com/p/63584709)，按照文章一步步来就能打造很美观的界面  
-**注意:**不要操作文章开头关于安装显卡驱动的部分，我们会在后续安装。
-
+**注意:** 不要操作文章开头关于安装显卡驱动的部分，我们会在后续安装。
 2. Deep Learning 配置  
+建议先阅读几篇教程，对流程有基本了解:  
+> https://blog.csdn.net/xierhacker/article/details/53035989  
+> https://blog.csdn.net/dudu815110/article/details/87167518  
+> http://www.pianshen.com/article/527837750/  
+> https://www.vicw.com/groups/water/topics/200  
+> https://blog.csdn.net/qq_32408773/article/details/84111244  
+
+Ubuntu18.04自带Python3.6，关于如何安装pip或者conda请自行百度  
+在安装pip之前，建议安装几个依赖包: `sudo apt install build-essential python3-dev python3-setuptools`
+* 安装NVIDIA驱动  
+可以使用命令 `lshw -c video` 查看机器的显卡型号，根据显卡型号去[NVIDIA官网](https://www.nvidia.cn/)下载最新的驱动程序  
+* 安装cuda  
 
 
 
