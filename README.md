@@ -59,19 +59,19 @@
     1. 去[CUDA官网](https://developer.nvidia.com/cuda-downloads)下载所需要的版本，建议下载runfile，　Base 和 Patch 部分都建议下载
     2. 建议在安装前阅读官方的document，以cuda10.0为例，其中比较有建设性的为[这里](https://docs.nvidia.com/cuda/archive/10.0/cuda-quick-start-guide/index.html#ubuntu-x86_64)  
     3. 安装一些32位的依赖  
-    ``
+    ```
     sudo dpkg --add-architecture i386  
     sudo apt update  
     sudo apt install libc6:i386  
-    ``
+    ```
     4. 接下来先运行base installer的文件 `sudo bash cuda_10.0******_linux.run`  
     **注意:** 运行后在提示是否安装驱动时(Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 384.81?)，　选择**否！**，其他地方默认安装即可  
     在安装下载的几个补丁，安装方式相同  
-    5. 安装完成后，将以下命令加入到`~/.bashrc`当中，以改变环境变量(摘抄自官方document)
-    ``
+    5. 安装完成后，将以下命令加入到`~/.bashrc`当中，以改变环境变量(摘抄自官方document)  
+    ```
     export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
     export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-    ``
+    ```
     重启shell
     6. 验证  
     在命令行输入 `nvcc -V`，会输出版本信息  
