@@ -7,7 +7,21 @@
 3. 若要安装双系统，还要清理出一块磁盘空间，参考[知乎文章](https://zhuanlan.zhihu.com/p/35970220)
 
 ### 2.安装(以DELL为例)
+建议先阅读一些安装教程:  
+> https://blog.csdn.net/baidu_36602427/article/details/86548203  
+> https://www.jianshu.com/p/54d9a3a695cc  
+> http://tonyzzx.github.io/2017/12/23/U%20%E7%9B%98%E5%AE%89%E8%A3%85%20Ubuntu%2016.04%20%EF%BC%88%E5%8D%95%E7%B3%BB%E7%BB%9F%EF%BC%89%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/  
+> https://blog.csdn.net/u010801439/article/details/80485251  
+> https://www.glbwl.com/u-install-ubuntu.html  
+
 1. 插入Ｕ盘，启动过程中出现DELL徽标时，快速按F12键。这将使您转至Boot Once（启动一次）菜单。通过键盘选择UEFI启动方式。同时，建议按F2进入BIOS，将 Security 选项中的 Secure Boot 设置为 Disabled 。
 2. 选择语言，键盘布局，一路Next就好，在安装类型时！  
 前两个选项会自动分区安装，省时省心，但这里推荐自己手动分区，这样可以熟悉自己的分区方便后续管理，因此这里我们选择*其他选项*  
-![image]()
+3. 接下来我们需要手动分区(自动分区即可跳过次步骤)。以本人电脑为例，128G固态，500G机械。  
+    * EFI分区　512M SSD 主分区　空间起始位置 (用作EFI启动，512M足够)
+    * /　SSD剩余空间　主分区　空间起始位置　(根目录)
+    * 交换分区　4G 机械硬盘　主分区　空间起始位置　(按照内存大小来设置，一般为内存大小的两倍，但也不至于过大，本机内存12G)
+    * /home　机械硬盘剩余空间　逻辑分区　空间起始位置　(存放个人文件，越大越好)
+    * **注意:** 安装启动引导器的设备选择为EFI分区对应的位置。
+
+
