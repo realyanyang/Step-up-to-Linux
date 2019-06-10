@@ -72,9 +72,8 @@
     export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
     export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
     ```
-    重启shell
     6. 验证  
-    在命令行输入 `nvcc -V`，会输出版本信息  
+    重启后在命令行输入 `nvcc -V`，会输出版本信息  
     进入家目录下的NVIDIA-SAMPLES，编译运行deviceQuery，输出`Result = PASS`则证明安装成功
 
 * 安装cuDNN
